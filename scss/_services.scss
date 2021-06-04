@@ -29,5 +29,9 @@
         text-align: center;
         width: 60%;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 576px) {
+            width: 90%;
+        }
     }
 }

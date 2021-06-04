@@ -67,6 +67,12 @@ a {
   width: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .app-header .container {
+    width: 90%;
+  }
+}
+
 .app-header__logo {
   margin: 280px 0 85px;
 }
@@ -197,9 +203,21 @@ a {
   width: 60%;
 }
 
+@media screen and (max-width: 576px) {
+  .about-us__text {
+    width: 90%;
+  }
+}
+
 .about-us__text--bottom {
   width: 50%;
   margin: 30px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us__text--bottom {
+    width: 80%;
+  }
 }
 
 .services {
@@ -295,6 +313,12 @@ a {
   text-align: center;
   width: 60%;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .services__text {
+    width: 90%;
+  }
 }
 
 .what-we-do {
@@ -420,6 +444,12 @@ a {
   text-align: center;
   line-height: 26px;
   width: 60%;
+}
+
+@media screen and (max-width: 576px) {
+  .what-we-do__block-text {
+    width: 90%;
+  }
 }
 
 .works {
@@ -628,6 +658,12 @@ a {
   text-align: center;
   width: 60%;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 576px) {
+  .contact__text {
+    width: 90%;
+  }
 }
 
 .contact__btn {
