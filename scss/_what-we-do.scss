@@ -39,6 +39,10 @@
             @include font('latolight', 300, 14px, null, #3c3c3c, null);
             line-height: 26px;
             width: 60%;
+
+            @media screen and (max-width: 576px) {
+                width: 90%;
+            }
         }
     }
 }

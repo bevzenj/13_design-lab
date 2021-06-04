@@ -23,9 +23,17 @@
         line-height: 24px;
         width: 60%;
 
+        @media screen and (max-width: 576px) {
+            width: 90%;
+        }
+
         &--bottom {
             width: 50%;
             margin: 30px 0;
+
+            @media screen and (max-width: 576px) {
+                width: 80%;
+            }
         }
     }
 }
