@@ -5,19 +5,20 @@
     &-block {
         position: relative;
         margin: 5px;
-        display: flex;
-        align-items: flex-end;
 
         &__title {
             @include font('latobold', 700, 34px, 5px, #ffffff, uppercase);
             width: fit-content;
             margin: 0 0 40px 45px;
+
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+            }
         }
 
         &--side {
             width: 29%;
             height: 237px;
-            background: url('../img/work-1.png');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -26,10 +27,40 @@
         &--middle {
             width: 40%;
             height: 237px;
-            background: url('../img/work-2.png');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        &--one {
+            background: url('../img/work-1.png');
+        }
+
+        &--two {
+            background: url('../img/work-2.png');
+        }
+        &--three {
+            background: url('../img/work-3.png');
+        }
+        &--four {
+            background: url('../img/work-4.png');
+        }
+        &--five {
+            background: url('../img/work-5.png');
+        }
+        &--six {
+            background: url('../img/work-6.png');
+        }
+
+        &__link {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                background: linear-gradient(0deg, rgb(0, 0, 0) 14%, rgba(255, 255, 255, 0.5));
+            }
         }
     }
 }
