@@ -1,0 +1,33 @@
+.services {
+    padding: 110px 0;
+    background: url('../img/services-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .container {
+        @include border(#ffffff);
+    }
+
+    &__title {
+        @include font('latobold', 700, 34px, 5px, #ffffff, uppercase);
+        @include title();
+        margin-bottom: 35px;
+
+        &::before {
+            @include line-before(#ffffff);
+        }
+       &::after {
+            @include line-after(#ffffff);
+        }
+    }
+
+    &__text {
+        @include font('latolight', 300, 16px, null, #ffffff, null);
+        line-height: 26px;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+}

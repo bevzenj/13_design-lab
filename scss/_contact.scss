@@ -1,0 +1,36 @@
+.contact {
+    padding: 120px 0 50px;
+
+    .container {
+        @include border(#3b3b3b);
+    }
+
+    &__title {
+        @include font('latobold', 700, 30px, 5px, #3c3c3c, uppercase);
+        @include title();
+        margin-bottom: 35px;
+
+        &::before {
+            @include line-before(#3b3b3b);
+        }
+       &::after {
+            @include line-after(#3b3b3b);
+        }
+    }
+
+    &__text {
+        @include font('latolight', 300, 16px, null, #3c3c3c, null);
+        line-height: 26px;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        width: 40%;
+        padding: 20px 0;
+        @include font('latoregular', 400, 16px, 3px, #ffffff, uppercase);
+        background: #3c3c3c;
+        margin-bottom: 40px;
+    }
+}

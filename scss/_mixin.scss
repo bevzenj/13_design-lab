@@ -1,0 +1,44 @@
+@mixin font($font-family, $font-weight, $font-size, $letter-spacing, $color, $text-transform) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    color: $color;
+    text-transform: $text-transform;
+    text-align: center;
+}
+
+@mixin border($color) {
+    border-left: 2px solid $color;
+    border-bottom: 2px solid $color;
+    border-right: 2px solid $color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin title {
+    position: relative;
+    top: -25px;
+    width: 100%;
+}
+
+@mixin line-before($color) {
+    content: "";
+    width: 30%;
+    height: 2px;
+    top: 25px;
+    left: 0;
+    background: $color;
+    position: absolute;
+}
+
+@mixin line-after($color) {
+    content: "";
+    width: 30%;
+    height: 2px;
+    top: 25px;
+    right: 0;
+    background: $color;
+    position: absolute;
+}

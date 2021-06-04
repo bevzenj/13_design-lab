@@ -1,0 +1,48 @@
+.app-header {
+    background: url('../img/header-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%
+    }
+
+    &__logo {
+        margin: 280px 0 85px;
+    }
+
+    &__title {
+        @include font('latobold', 700, 54px, 9px, #ffffff, uppercase);
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        @include font('latoregular', 400, 15px, 1px, #ffffff, uppercase);
+        margin-bottom: 350px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app-header {
+        background-position: right;
+   
+        .container {
+            margin: 0 auto;
+        }
+
+        &__logo {
+            margin: 120px 0 85px;
+        }
+    
+        &__subtitle {
+            margin-bottom: 200px;
+        }
+    }
+
+}
