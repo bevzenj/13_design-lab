@@ -31,6 +31,14 @@
     left: 0;
     background: $color;
     position: absolute;
+
+    @media screen and (max-width: 768px) {
+        width: 20%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 10%;
+    }
 }
 
 @mixin line-after($color) {
@@ -38,7 +46,15 @@
     width: 30%;
     height: 2px;
     top: 25px;
-    right: 0;
+    right: -1px;
     background: $color;
     position: absolute;
+
+    @media screen and (max-width: 768px) {
+        width: 20%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 10%;
+    }
 }

@@ -14,11 +14,18 @@
         .shp0 { fill: none;stroke: #3c3c3c;stroke-width: 2 } 
         .shp1 { fill: none;stroke: #3c3c3c;stroke-width: 2 } 
         .shp2 { fill: #3c3c3c } 
+
+        @media screen and (max-width: 576px) {
+            width: 10%;
+        }
     }
 
     &__text {
         @include font('latoregular', 400, 14px, null, #3c3c3c, null);
         margin-left: 30px;
         
+        @media screen and (max-width: 576px) {
+            margin-left: 10px;
+        }
     }
 }

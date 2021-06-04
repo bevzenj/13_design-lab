@@ -12,9 +12,15 @@
 
         &::before {
             @include line-before(#3b3b3b);
+            @media screen and (max-width: 576px) {
+                width: 1%;
+            }
         }
        &::after {
             @include line-after(#3b3b3b);
+            @media screen and (max-width: 576px) {
+                width: 1%;
+            }
         }
     }
 
